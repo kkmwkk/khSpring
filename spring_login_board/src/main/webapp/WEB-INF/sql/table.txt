@@ -1,0 +1,41 @@
+SELECT * FROM MP_BOARD;
+SELECT * FROM MP_MEMBER;
+SELECT * FROM MP_REPLY;
+
+// 테이블 생성(MP_BOARD)
+CREATE TABLE MP_BOARD(
+BNO NUMBER primary key,
+TITLE VARCHAR2(100) NOT NULL,
+CONTENT VARCHAR2(1000) NOT NULL,
+WRITER VARCHAR2(100) NOT NULL,
+REGDATE DATE DEFAULT sysdate);
+
+
+// 테이블 생성(MP_MEMBER)
+CREATE TABLE MP_MEMBER(
+USERID VARCHAR2(40) primary key,
+USERPASS VARCHAR2(100) NOT NULL,
+USERNAME VARCHAR2(50),
+REGDATE DATE DEFAULT sysdate);
+
+
+// 테이블 생성(MP_REPLY)
+CREATE TABLE MP_REPLY(
+BNO number not null,
+rno number not null,
+content varchar2(1000) not null,
+writer varchar2(50) not null,
+regdate date default sysdate,
+primary key(bno,rno));
+
+
+
+// 테이블 관계 설정
+alter table mp_reply add constraint mp_reply_bno foreign key(bno)
+references mp_board(bno);
+
+
+
+// 시퀀스 생성
+CREATE SEQUENCE mp_board_seq INCREMENT BY 1 START WITH 1 NOCYCLE;
+CREATE SEQUENCE mp_reply_seq INCREMENT BY 1 START WITH 1 NOCYCLE;
