@@ -23,7 +23,7 @@ public class BoardVO {
 	private String content;
 	@NotEmpty(message = "작성자를 입력하세요.")
 	private String writer;
-	
+	private String addr;
 	
 	private int password;
 	private Timestamp regDate;

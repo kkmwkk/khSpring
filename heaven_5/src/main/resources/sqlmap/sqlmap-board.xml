@@ -15,9 +15,9 @@
 	
 	<insert id="insert" parameterType="boardVO">
 		INSERT INTO BOARD
-		(seq, title, content, writer, password, regDate, cnt)
+		(seq, title, content, writer, addr, password, regDate, cnt)
 		VALUES
-		(board_seq.nextval, #{title}, #{content}, #{writer}, #{password}, sysdate, 0)
+		(board_seq.nextval, #{title}, #{content}, #{writer}, #{addr}, #{password}, sysdate, 0)
 	</insert>
 	
 	<update id="update" parameterType="boardVO">
@@ -25,6 +25,7 @@
 		title = #{title}
 		, content = #{content}
 		, writer = #{writer}
+		, addr = #{addr}
 		WHERE seq = #{seq}
 		AND password = #{password}
 	</update>

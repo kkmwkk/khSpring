@@ -86,6 +86,7 @@ public class BoardController {
 			if(boardVO.getPassword() == pwd) {
 				boardService.edit(boardVO);
 				sessionStatus.setComplete(); // 현재 컨트롤러 세션에 저장된 모든 정보를 제거한다. 개별적으로 제거할 순 없다.
+				return "redirect:/board/list";	
 			}
 			
 			// @SessionAttributes를 사용해 세션에 저장한 모델이 더 이상 필요 없어질 경우 세션에서 제거해줘야 한다.
