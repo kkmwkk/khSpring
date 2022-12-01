@@ -18,7 +18,10 @@
 	      <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
 	      <property name="username" value="scott"/>
 	      <property name="password" value="tiger"/>
-	   </bean> <!-- sqlsessionfactory 설정 -->
+	   </bean>
+	   
+	   
+	    <!-- sqlsessionfactory 설정 -->
       
       <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
          <property name="dataSource" ref="dataSource" />
