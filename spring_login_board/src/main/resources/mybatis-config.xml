@@ -13,8 +13,8 @@
 	
 	<typeAliases>
 		<typeAlias type="com.korea.myboard.vo.MemberVO" alias="memberVO"/>
-<!-- 		<typeAlias type="com.korea.myboard.vo.BoardVO" alias="boardVO"/>
-		<typeAlias type="com.korea.myboard.vo.replyVO" alias="ReplyVO"/> -->
+		<typeAlias type="com.korea.myboard.vo.BoardVO" alias="boardVO"/>
+		<!-- <typeAlias type="com.korea.myboard.vo.replyVO" alias="ReplyVO"/> --> 
 	</typeAliases>
 </configuration>       
 

@@ -13,7 +13,7 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		$("#logoutBtn").on("click",function(){
-			location.href="member/register";
+			location.href="member/logout";
 		})
 		
 		$("#registerBtn").on("click",function(){

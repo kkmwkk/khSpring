@@ -11,13 +11,6 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
        
        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-       
-       <!-- 부트스트랩은 트위터에서 사용하는 각종 레이아웃, 버튼, 입력창 등의 디자인을 CSS와 JavaScript로 만들어 놓은 것이다.
-       . Easy to use : HTML과 CSS 기본 지식을 가진 누구나 쉽게 접근 가능(+javascript)
-       . Responsive features : 반응형 CSS를 포함한 단일코드로 모든 디바이스에 적용할 수 있음
-       
-       부트스트랩의 CSS와 JavaScript,관련 이미지만 설치하고 미리 지정된 CSS 클래스나 JavaScript 함수만 불러오면 트위터에서 쓰는 것과 비슷한 디자인이 뚝딱 만들어진다.
-        -->
 <title>회원가입</title>
 </head>
 <script type="text/javascript">
